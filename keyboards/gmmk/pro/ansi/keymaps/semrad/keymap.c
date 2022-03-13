@@ -164,6 +164,11 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             rgb_matrix_set_color(LED_T, RGB_BLUE); //Breathing
             rgb_matrix_set_color(LED_Y, RGB_BLUE); //Rainbow
             rgb_matrix_set_color(LED_U, RGB_BLUE); //Swirl
+            //RGB Effects
+            rgb_matrix_set_color(LED_UP, RGB_WHITE);
+            rgb_matrix_set_color(LED_DOWN, RGB_WHITE);
+            rgb_matrix_set_color(LED_LEFT, RGB_MAGENTA);
+            rgb_matrix_set_color(LED_RIGHT, RGB_PURPLE);
             break;
         default:
             break;
