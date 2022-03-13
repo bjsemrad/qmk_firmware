@@ -21,6 +21,8 @@
 	bool caps_active = false;
 	bool caps_flash_on = false;
     bool rgb_nightmode = true;
+    bool fps_game_mode = false;
+    bool rgb_diablo = false;
 
 	static uint16_t caps_flasher = 0;
 	RGB rgb_value;
@@ -130,6 +132,10 @@
     const uint8_t LED_SIDE_LEFT[] = { LED_L1, LED_L2, LED_L3, LED_L4, LED_L5, LED_L6, LED_L7, LED_L8};
 
     const uint8_t LED_SIDE_RIGHT[] = { LED_R1, LED_R2, LED_R3, LED_R4, LED_R5, LED_R6, LED_R7, LED_R8};
+
+    const uint8_t LED_GAMER[] = {LED_W, LED_A, LED_S, LED_D, LED_LSFT, LED_LCTL, LED_R, LED_SPC};
+
+    const uint8_t LED_DIABLO[] = {LED_F1, LED_F2, LED_F3, LED_F4, LED_F5, LED_F6, LED_F7, LED_F8, LED_1, LED_2, LED_3, LED_4};
 
     const uint8_t LED_SET_MINUS_SIDE[] = {
         LED_ESC, // 0, ESC, k13

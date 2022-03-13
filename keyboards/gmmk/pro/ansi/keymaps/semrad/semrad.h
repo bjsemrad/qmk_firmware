@@ -1,7 +1,9 @@
 // KEYCODES
 enum custom_user_keycodes {
     RGB_NITE = SAFE_RANGE,
-     // Turns off all rgb but allow rgb indicators to work
+    RGB_GAME,
+    RGB_RESET,
+    RGB_DIABLO
 };
 
 
