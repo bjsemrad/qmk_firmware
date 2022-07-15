@@ -88,26 +88,26 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         }
     }
     #endif
-    #ifdef RGB_MATRIX_ENABLE
-    if (fps_game_mode){
-        for (uint8_t i = 0; i < sizeof(LED_SET_MINUS_SIDE) / sizeof(LED_SIDE_LEFT[0]); i++) {
-            rgb_matrix_set_color(LED_SET_MINUS_SIDE[i], RGB_OFF);
-        }
-        for (uint8_t i = 0; i < sizeof(LED_GAMER) / sizeof(LED_GAMER[0]); i++) {
-            rgb_matrix_set_color(LED_GAMER[i], RGB_GREEN);
-        }
-    }
-    #endif
-    #ifdef RGB_MATRIX_ENABLE
-    if (rgb_diablo){
-        for (uint8_t i = 0; i < sizeof(LED_SET_MINUS_SIDE) / sizeof(LED_SIDE_LEFT[0]); i++) {
-            rgb_matrix_set_color(LED_SET_MINUS_SIDE[i], RGB_OFF);
-        }
-        for (uint8_t i = 0; i < sizeof(LED_DIABLO) / sizeof(LED_DIABLO[0]); i++) {
-            rgb_matrix_set_color(LED_DIABLO[i], RGB_RED);
-        }
-    }
-    #endif
+    // #ifdef RGB_MATRIX_ENABLE
+    // if (fps_game_mode){
+    //     for (uint8_t i = 0; i < sizeof(LED_SET_MINUS_SIDE) / sizeof(LED_SIDE_LEFT[0]); i++) {
+    //         rgb_matrix_set_color(LED_SET_MINUS_SIDE[i], RGB_OFF);
+    //     }
+    //     for (uint8_t i = 0; i < sizeof(LED_GAMER) / sizeof(LED_GAMER[0]); i++) {
+    //         rgb_matrix_set_color(LED_GAMER[i], RGB_GREEN);
+    //     }
+    // }
+    // #endif
+    // #ifdef RGB_MATRIX_ENABLE
+    // if (rgb_diablo){
+    //     for (uint8_t i = 0; i < sizeof(LED_SET_MINUS_SIDE) / sizeof(LED_SIDE_LEFT[0]); i++) {
+    //         rgb_matrix_set_color(LED_SET_MINUS_SIDE[i], RGB_OFF);
+    //     }
+    //     for (uint8_t i = 0; i < sizeof(LED_DIABLO) / sizeof(LED_DIABLO[0]); i++) {
+    //         rgb_matrix_set_color(LED_DIABLO[i], RGB_RED);
+    //     }
+    // }
+    // #endif
     // rgb_matrix_set_color_all(RGB_OFF);
     if (IS_HOST_LED_ON(USB_LED_CAPS_LOCK)) {
         if (!caps_active) {
@@ -140,30 +140,30 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 
     switch(get_highest_layer(layer_state|default_layer_state)) {
         case _FUNC:
-            rgb_matrix_set_color(LED_F1, RGB_CYAN); //my computer
-            rgb_matrix_set_color(LED_F2, RGB_GOLD); //calc
-            rgb_matrix_set_color(LED_F7, RGB_BLUE); //PREV
-            rgb_matrix_set_color(LED_F8, RGB_GREEN); //PLay/Pause
-            rgb_matrix_set_color(LED_F9, RGB_BLUE); //Next Track
-            rgb_matrix_set_color(LED_F10, RGB_RED); //Mute
-            rgb_matrix_set_color(LED_F11, RGB_MAGENTA); //Vol Down
-            rgb_matrix_set_color(LED_F12, RGB_TEAL); //Vol Up
-            rgb_matrix_set_color(LED_DEL, RGB_AZURE); //Print Screen
-            rgb_matrix_set_color(LED_HOME, RGB_RED); //Diablo
-            rgb_matrix_set_color(LED_PGUP, RGB_GREEN); //Game
+            // rgb_matrix_set_color(LED_F1, RGB_CYAN); //my computer
+            // rgb_matrix_set_color(LED_F2, RGB_GOLD); //calc
+            // rgb_matrix_set_color(LED_F7, RGB_BLUE); //PREV
+            // rgb_matrix_set_color(LED_F8, RGB_GREEN); //PLay/Pause
+            // rgb_matrix_set_color(LED_F9, RGB_BLUE); //Next Track
+            // rgb_matrix_set_color(LED_F10, RGB_RED); //Mute
+            // rgb_matrix_set_color(LED_F11, RGB_MAGENTA); //Vol Down
+            // rgb_matrix_set_color(LED_F12, RGB_TEAL); //Vol Up
+            // rgb_matrix_set_color(LED_DEL, RGB_AZURE); //Print Screen
+            // rgb_matrix_set_color(LED_HOME, RGB_RED); //Diablo
+            // rgb_matrix_set_color(LED_PGUP, RGB_GREEN); //Game
             rgb_matrix_set_color(LED_Z, RGB_WHITE); //Nightmode
             rgb_matrix_set_color(LED_GRV, RGB_WHITE); //OSX
             rgb_matrix_set_color(LED_1, RGB_RED); //LED OFF
-            rgb_matrix_set_color(LED_Q, RGB_BLUE); //Saturtation
-            rgb_matrix_set_color(LED_A, RGB_BLUE); //Saturtation
-            rgb_matrix_set_color(LED_W, RGB_WHITE); //Brightness
-            rgb_matrix_set_color(LED_S, RGB_WHITE); //Brightness
-            rgb_matrix_set_color(LED_E, RGB_GREEN); //HUE
-            rgb_matrix_set_color(LED_D, RGB_GREEN); //HUE
-            rgb_matrix_set_color(LED_R, RGB_BLUE); //PLAIN
-            rgb_matrix_set_color(LED_T, RGB_BLUE); //Breathing
-            rgb_matrix_set_color(LED_Y, RGB_BLUE); //Rainbow
-            rgb_matrix_set_color(LED_U, RGB_BLUE); //Swirl
+            // rgb_matrix_set_color(LED_Q, RGB_BLUE); //Saturtation
+            // rgb_matrix_set_color(LED_A, RGB_BLUE); //Saturtation
+            // rgb_matrix_set_color(LED_W, RGB_WHITE); //Brightness
+            // rgb_matrix_set_color(LED_S, RGB_WHITE); //Brightness
+            // rgb_matrix_set_color(LED_E, RGB_GREEN); //HUE
+            // rgb_matrix_set_color(LED_D, RGB_GREEN); //HUE
+            // rgb_matrix_set_color(LED_R, RGB_BLUE); //PLAIN
+            // rgb_matrix_set_color(LED_T, RGB_BLUE); //Breathing
+            // rgb_matrix_set_color(LED_Y, RGB_BLUE); //Rainbow
+            // rgb_matrix_set_color(LED_U, RGB_BLUE); //Swirl
             //RGB Effects
             rgb_matrix_set_color(LED_UP, RGB_WHITE);
             rgb_matrix_set_color(LED_DOWN, RGB_WHITE);
@@ -178,39 +178,39 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 #ifdef RGB_MATRIX_ENABLE
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case RGB_NITE:
-      if (record->event.pressed) {
-          rgb_nightmode = !rgb_nightmode;
-          fps_game_mode = false;
-          rgb_diablo = false;
-      }else {
-          return false;
-      }
-      break;
-    case RGB_GAME:
-      if (record->event.pressed) {
-          fps_game_mode = !fps_game_mode;
-          rgb_diablo = false;
-      }else {
-          return false;
-      }
-      break;
+    // case RGB_NITE:
+    //   if (record->event.pressed) {
+    //       rgb_nightmode = !rgb_nightmode;
+    //       fps_game_mode = false;
+    //       rgb_diablo = false;
+    //   }else {
+    //       return false;
+    //   }
+    //   break;
+    // case RGB_GAME:
+    //   if (record->event.pressed) {
+    //       fps_game_mode = !fps_game_mode;
+    //       rgb_diablo = false;
+    //   }else {
+    //       return false;
+    //   }
+    //   break;
     case RGB_RESET:
       if (record->event.pressed) {
-          fps_game_mode = false;
-          rgb_nightmode = false;
+        //   fps_game_mode = false;
+        //   rgb_nightmode = false;
       }else {
           return false;
       }
       break;
-     case  RGB_DIABLO:
-      if (record->event.pressed) {
-          fps_game_mode = false;
-          rgb_diablo = !rgb_diablo;
-      }else {
-          return false;
-      }
-      break;
+    //  case  RGB_DIABLO:
+    //   if (record->event.pressed) {
+    //       fps_game_mode = false;
+    //       rgb_diablo = !rgb_diablo;
+    //   }else {
+    //       return false;
+    //   }
+    //   break;
     case KC_MUTE:
         if (record->event.pressed) {
             if (get_mods() & MOD_MASK_CTRL){
