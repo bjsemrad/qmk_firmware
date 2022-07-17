@@ -178,15 +178,15 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 #ifdef RGB_MATRIX_ENABLE
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    // case RGB_NITE:
-    //   if (record->event.pressed) {
-    //       rgb_nightmode = !rgb_nightmode;
+    case RGB_NITE:
+      if (record->event.pressed) {
+          rgb_nightmode = !rgb_nightmode;
     //       fps_game_mode = false;
     //       rgb_diablo = false;
-    //   }else {
-    //       return false;
-    //   }
-    //   break;
+      }else {
+          return false;
+      }
+      break;
     // case RGB_GAME:
     //   if (record->event.pressed) {
     //       fps_game_mode = !fps_game_mode;
@@ -198,7 +198,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case RGB_RESET:
       if (record->event.pressed) {
         //   fps_game_mode = false;
-        //   rgb_nightmode = false;
+          rgb_nightmode = false;
       }else {
           return false;
       }
